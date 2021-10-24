@@ -1,0 +1,19 @@
+﻿@model ExploreOntario.Models.Post
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+
+
+
+<article class="blog-posts">
+    <h1>@Model.Title</h1>
+    <div class="detials">
+        Posted <span>@Model.Posted</span> by <span>@Model.Author</span>
+    </div>
+    <div class="content">
+        @Model.Body
+    </div>
+
+</article>
